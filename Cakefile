@@ -29,8 +29,8 @@ def target_settings(target, platform, version)
 
   target.language = :swift
   target.type = :framework
-  target.platform = :osx
-  target.deployment_target = 10.9
+  target.platform = platform
+  target.deployment_target = version
   target.name = "#{name}-#{target_suffix}"
   target.include_files = "Source/*.swift"
   target.all_configurations.settings["INFOPLIST_FILE"] = "Supporting Files/Info.plist"
