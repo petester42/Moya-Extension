@@ -32,11 +32,12 @@ def target_settings(target, platform, version)
   target.platform = platform
   target.deployment_target = version
   target.name = "#{name}-#{target_suffix}"
-  target.include_files = "Source/*.swift"
+  target.include_files = ["Source/*.swift", "Supporting Files/*.h"]
   target.all_configurations.settings["INFOPLIST_FILE"] = "Supporting Files/Info.plist"
   target.all_configurations.settings["PRODUCT_BUNDLE_IDENTIFIER"] = bundle_id
   target.all_configurations.settings["RAW_PRODUCT_NAME"] = name
   target.all_configurations.settings["PRODUCT_NAME"] = "${RAW_PRODUCT_NAME:identifier}"
+  target.all_configurations.settings["ENABLE_BITCODE"] = platform == :osx ? "NO" : "YES"
 end
 
 Project.new name do |project|
