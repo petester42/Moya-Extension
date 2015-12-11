@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/petester42/xcake.git
-  revision: 91523558efe300120d485fbe0c897da52fd7c854
+  revision: 28f49bc0fd3d944e43928e1d12bd3a6f5cde86c2
   branch: development
   specs:
     xcake (0.1.7)
