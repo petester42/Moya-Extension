@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3055C495D9DF5006576819CF"
+               BlueprintIdentifier = "E41A3550389EC4ED40180B45"
                BuildableName = "Moya_Extension.framework"
                BlueprintName = "Moya-Extension-Mac"
                ReferencedContainer = "container:Moya-Extension.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EC7FF2C34D61185A02474580"
+               BlueprintIdentifier = "372EAF83E00E3BBD5B965A8B"
                BuildableName = "Moya-Extension-MacTests.xctest"
                BlueprintName = "Moya-Extension-MacTests"
                ReferencedContainer = "container:Moya-Extension.xcodeproj">
@@ -55,7 +55,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3055C495D9DF5006576819CF"
+            BlueprintIdentifier = "E41A3550389EC4ED40180B45"
             BuildableName = "Moya_Extension.framework"
             BlueprintName = "Moya-Extension-Mac"
             ReferencedContainer = "container:Moya-Extension.xcodeproj">
