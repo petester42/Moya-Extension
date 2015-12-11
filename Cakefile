@@ -97,7 +97,7 @@ Project.new name do |project|
 
   project.target do |target|
     target_settings target, :watchos, 2.0
-    test_target_settings project, target
+    # test_target_settings project, target //can't test watchos
   end
 
 end
