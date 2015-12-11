@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0720"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "88FC7346DF91B708C4D130D4"
+               BlueprintIdentifier = "55DB0F8A1C1B20C3006C0573"
                BuildableName = "Moya_Extension.framework"
                BlueprintName = "Moya-Extension-iOS"
                ReferencedContainer = "container:Moya-Extension.xcodeproj">
@@ -32,13 +32,22 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "02C9149C5393842F605F34CE"
+               BlueprintIdentifier = "55DB0F931C1B20C3006C0573"
                BuildableName = "Moya-Extension-iOSTests.xctest"
                BlueprintName = "Moya-Extension-iOSTests"
                ReferencedContainer = "container:Moya-Extension.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "55DB0F8A1C1B20C3006C0573"
+            BuildableName = "Moya_Extension.framework"
+            BlueprintName = "Moya-Extension-iOS"
+            ReferencedContainer = "container:Moya-Extension.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -55,7 +64,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "88FC7346DF91B708C4D130D4"
+            BlueprintIdentifier = "55DB0F8A1C1B20C3006C0573"
             BuildableName = "Moya_Extension.framework"
             BlueprintName = "Moya-Extension-iOS"
             ReferencedContainer = "container:Moya-Extension.xcodeproj">
@@ -70,6 +79,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "55DB0F8A1C1B20C3006C0573"
+            BuildableName = "Moya_Extension.framework"
+            BlueprintName = "Moya-Extension-iOS"
+            ReferencedContainer = "container:Moya-Extension.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
