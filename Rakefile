@@ -1,9 +1,9 @@
 def supported_test_targets
-  return [:ios] #, :osx, :tvos]
+  return [:ios, :osx] #, :tvos]
 end
 
 def supported_build_targets
-  return [:ios] #, :osx, :tvos, :watchos]
+  return [:ios, :osx] #, :tvos, :watchos]
 end
 
 def scheme_name
@@ -54,6 +54,11 @@ def xcodebuild(platform, configuration, tasks, xcprety_args)
   destination = settings[:device_host]
 
   sh "set -o pipefail && xcodebuild -project '#{project}' -scheme '#{scheme}' -configuration '#{configuration}' -sdk #{sdk} -destination #{destination} #{tasks} | xcpretty -c #{xcprety_args}"
+end
+
+desc 'Setup project'
+task :setup do
+  sh 'bundle exec xcake'
 end
 
 desc 'Build, then run tests.'
