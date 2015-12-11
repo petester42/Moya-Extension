@@ -58,6 +58,7 @@ end
 
 desc 'Setup project'
 task :setup do
+  sh "rm -rf #{project_name}"
   sh 'bundle exec xcake'
 end
 

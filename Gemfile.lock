@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/petester42/xcake.git
-  revision: 7e7a7d0bc4d8505eccacdabfeaee74742d763589
+  revision: a3b22a13ceaaa4e79156f3b22877f39eb58df1fc
   branch: development
   specs:
-    xcake (0.1.7)
+    xcake (0.1.9)
       claide
       xcodeproj (~> 0.28)
 

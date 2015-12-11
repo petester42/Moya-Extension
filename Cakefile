@@ -34,7 +34,7 @@ def target_settings(target, platform, version)
   target.platform = platform
   target.deployment_target = version
 
-  target.include_files = ["Source/*", "Supporting Files/*"]
+  target.include_files = ["Source/*", "Supporting Files/*.h"]
   target.all_configurations.settings["INFOPLIST_FILE"] = "Supporting Files/Info.plist"
   target.all_configurations.settings["PRODUCT_BUNDLE_IDENTIFIER"] = bundle_id
   target.all_configurations.settings["RAW_PRODUCT_NAME"] = name
