@@ -1,5 +1,5 @@
 import Foundation
 
-func main() -> String {
+public func main() -> String {
     return "Hello World"
 }
