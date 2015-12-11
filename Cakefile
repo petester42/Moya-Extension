@@ -83,19 +83,19 @@ Project.new name do |project|
     test_target_settings project, target
   end
 
-  project.target do |target|
-    target_settings target, :tvos, 9.0
-    test_target_settings project, target
-  end
-
-  project.target do |target|
-    target_settings target, :watchos, 2.0
-    test_target_settings project, target
-  end
-
-  project.target do |target|
-    target_settings target, :osx, 10.9
-    test_target_settings project, target
-  end
+  # project.target do |target|
+  #   target_settings target, :tvos, 9.0
+  #   test_target_settings project, target
+  # end
+  #
+  # project.target do |target|
+  #   target_settings target, :watchos, 2.0
+  #   test_target_settings project, target
+  # end
+  #
+  # project.target do |target|
+  #   target_settings target, :osx, 10.9
+  #   test_target_settings project, target
+  # end
 
 end
