@@ -7,43 +7,42 @@
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
+            buildForAnalyzing = "YES"
             buildForTesting = "YES"
             buildForRunning = "YES"
             buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ECE13639CDAABDCA909F625E"
-               BuildableName = "Moya_Extension.framework"
-               BlueprintName = "Moya-Extension-Mac"
-               ReferencedContainer = "container:Moya-Extension.xcodeproj">
+               BuildableIdentifier = 'primary'
+               BlueprintIdentifier = '8FA388B0BF0F4CBE00D47E8A'
+               BlueprintName = 'Moya-Extension-Mac'
+               ReferencedContainer = 'container:Moya-Extension.xcodeproj'
+               BuildableName = 'Moya-Extension-Mac.'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      buildConfiguration = "Debug">
+      <AdditionalOptions>
+      </AdditionalOptions>
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3DE1CC1BAC9292059ADD0851"
-               BuildableName = "Moya-Extension-MacTests.xctest"
-               BlueprintName = "Moya-Extension-MacTests"
-               ReferencedContainer = "container:Moya-Extension.xcodeproj">
+               BuildableIdentifier = 'primary'
+               BlueprintIdentifier = '5297A6B5C70CA48641FE4606'
+               BlueprintName = 'Moya-Extension-MacTests'
+               ReferencedContainer = 'container:Moya-Extension.xcodeproj'
+               BuildableName = 'Moya-Extension-MacTests.'>
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -51,25 +50,17 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
+      buildConfiguration = "Debug"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ECE13639CDAABDCA909F625E"
-            BuildableName = "Moya_Extension.framework"
-            BlueprintName = "Moya-Extension-Mac"
-            ReferencedContainer = "container:Moya-Extension.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release"
-      shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      debugDocumentVersioning = "YES">
+      debugDocumentVersioning = "YES"
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES">
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
