@@ -40,7 +40,7 @@ def target_settings(target, platform, version)
   target.all_configurations.settings["RAW_PRODUCT_NAME"] = name
   target.all_configurations.settings["PRODUCT_NAME"] = "${RAW_PRODUCT_NAME:identifier}"
   target.all_configurations.settings["ENABLE_BITCODE"] = platform == :osx ? "NO" : "YES"
-
+  target.all_configurations.settings["LD_RUNPATH_SEARCH_PATHS"] = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks"
 end
 
 def test_target_settings(project, host_target)
@@ -57,6 +57,8 @@ def test_target_settings(project, host_target)
     target.include_files = ["Tests/*.swift"]
 
     target.all_configurations.settings["INFOPLIST_FILE"] = "Supporting Files/Info.plist"
+    target.all_configurations.settings["LD_RUNPATH_SEARCH_PATHS"] = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks"
+
   end
 
   unit_test_target
