@@ -34,7 +34,7 @@ def target_settings(target, platform, version)
   target.platform = platform
   target.deployment_target = version
 
-  target.include_files = ["Source/*.swift", "Supporting Files/*.h"]
+  target.include_files = ["Source/*", "Supporting Files/*"]
   target.all_configurations.settings["INFOPLIST_FILE"] = "Supporting Files/Info.plist"
   target.all_configurations.settings["PRODUCT_BUNDLE_IDENTIFIER"] = bundle_id
   target.all_configurations.settings["RAW_PRODUCT_NAME"] = name
@@ -44,9 +44,9 @@ end
 
 def test_target_settings(target)
 
-    target.include_files = ["Tests/*.swift"]
+    target.include_files = ["Tests/*"]
     target.all_configurations.settings["INFOPLIST_FILE"] = "Supporting Files/Info.plist"
-    
+
 end
 
 Project.new name do |project|
