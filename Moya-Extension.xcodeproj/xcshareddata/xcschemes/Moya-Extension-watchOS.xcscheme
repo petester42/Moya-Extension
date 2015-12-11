@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D7BA653DE5377BFE601E740B"
+               BlueprintIdentifier = "7DE7F19C668DD732E7752F26"
                BuildableName = "Moya_Extension.framework"
                BlueprintName = "Moya-Extension-watchOS"
                ReferencedContainer = "container:Moya-Extension.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D7BA653DE5377BFE601E740B"
+            BlueprintIdentifier = "7DE7F19C668DD732E7752F26"
             BuildableName = "Moya_Extension.framework"
             BlueprintName = "Moya-Extension-watchOS"
             ReferencedContainer = "container:Moya-Extension.xcodeproj">
