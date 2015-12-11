@@ -41,7 +41,7 @@ def target_settings(target, platform, version)
   target.all_configurations.settings["PRODUCT_NAME"] = "${RAW_PRODUCT_NAME:identifier}"
   target.all_configurations.settings["ENABLE_BITCODE"] = platform == :osx ? "NO" : "YES"
   target.all_configurations.settings["LD_RUNPATH_SEARCH_PATHS"] = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks"
-
+  
 end
 
 def test_target_settings(project, host_target)
