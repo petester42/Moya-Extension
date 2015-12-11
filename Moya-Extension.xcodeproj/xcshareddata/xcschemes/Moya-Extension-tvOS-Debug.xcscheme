@@ -7,43 +7,42 @@
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
+            buildForAnalyzing = "YES"
             buildForTesting = "YES"
             buildForRunning = "YES"
             buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "69ADA5B8018359CE9474E170"
-               BuildableName = "Moya_Extension.framework"
-               BlueprintName = "Moya-Extension-tvOS"
-               ReferencedContainer = "container:Moya-Extension.xcodeproj">
+               BuildableIdentifier = 'primary'
+               BlueprintIdentifier = 'EF9FFC831F41AD67FF0B601B'
+               BlueprintName = 'Moya-Extension-tvOS'
+               ReferencedContainer = 'container:Moya-Extension.xcodeproj'
+               BuildableName = 'Moya-Extension-tvOS.'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      buildConfiguration = "Debug">
+      <AdditionalOptions>
+      </AdditionalOptions>
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D512A5A2C3EF1521F90CB71E"
-               BuildableName = "Moya-Extension-tvOSTests.xctest"
-               BlueprintName = "Moya-Extension-tvOSTests"
-               ReferencedContainer = "container:Moya-Extension.xcodeproj">
+               BuildableIdentifier = 'primary'
+               BlueprintIdentifier = '85B563FDF8C5A6B5D28B75CC'
+               BlueprintName = 'Moya-Extension-tvOSTests'
+               ReferencedContainer = 'container:Moya-Extension.xcodeproj'
+               BuildableName = 'Moya-Extension-tvOSTests.'>
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -51,25 +50,17 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
+      buildConfiguration = "Debug"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "69ADA5B8018359CE9474E170"
-            BuildableName = "Moya_Extension.framework"
-            BlueprintName = "Moya-Extension-tvOS"
-            ReferencedContainer = "container:Moya-Extension.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release"
-      shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      debugDocumentVersioning = "YES">
+      debugDocumentVersioning = "YES"
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES">
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
