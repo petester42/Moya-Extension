@@ -1,9 +1,9 @@
 def supported_test_targets
-  return [:ios, :osx] #, :tvos]
+  return [:ios, :osx, :tvos]
 end
 
 def supported_build_targets
-  return [:ios, :osx] #, :tvos, :watchos]
+  return [:ios, :osx, :tvos, :watchos]
 end
 
 def scheme_name

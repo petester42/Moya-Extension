@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7359CE4F3C0EE420A68DABAC'
-               BlueprintName = 'Moya-Extension-Mac'
+               BlueprintIdentifier = '0183A3FDF0F503937AA1FB3E'
+               BlueprintName = 'Moya-Extension-watchOS'
                ReferencedContainer = 'container:Moya-Extension.xcodeproj'
-               BuildableName = 'Moya-Extension-Mac.'>
+               BuildableName = 'Moya-Extension-watchOS.'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,10 +34,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '37F0EB1B9A57F1DE4DAD74D9'
-               BlueprintName = 'Moya-Extension-MacTests'
+               BlueprintIdentifier = '4F2A259C9FF0F9C259CB49F3'
+               BlueprintName = 'Moya-Extension-watchOSTests'
                ReferencedContainer = 'container:Moya-Extension.xcodeproj'
-               BuildableName = 'Moya-Extension-MacTests.'>
+               BuildableName = 'Moya-Extension-watchOSTests.'>
             </BuildableReference>
          </TestableReference>
       </Testables>
