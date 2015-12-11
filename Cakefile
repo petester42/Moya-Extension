@@ -23,6 +23,19 @@ def target_identifier(platform)
   end
 end
 
+def platform_specific_settings(target)
+
+  case target.platform
+  when :osx
+    target.all_configurations.settings["COMBINE_HIDPI_IMAGES"] = "YES"
+    target.all_configurations.settings["LD_RUNPATH_SEARCH_PATHS"] = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks"
+  when :ios, :watchos, :tvos
+    target.all_configurations.settings["LD_RUNPATH_SEARCH_PATHS"] = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks"
+    target.all_configurations.settings["ENABLE_BITCODE"] = "YES"
+  end
+
+end
+
 def target_settings(target, platform, version)
 
   target_suffix = target_identifier platform
@@ -39,10 +52,9 @@ def target_settings(target, platform, version)
   target.all_configurations.settings["PRODUCT_BUNDLE_IDENTIFIER"] = bundle_id
   target.all_configurations.settings["RAW_PRODUCT_NAME"] = name
   target.all_configurations.settings["PRODUCT_NAME"] = "${RAW_PRODUCT_NAME:identifier}"
-  target.all_configurations.settings["ENABLE_BITCODE"] = platform == :osx ? "NO" : "YES"
-  target.all_configurations.settings["LD_RUNPATH_SEARCH_PATHS"] = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks"
-  target.all_configurations.settings["COMBINE_HIDPI_IMAGES"] = :osx ? "YES" : ""
-  
+
+  platform_specific_settings target
+
 end
 
 def test_target_settings(project, host_target)
@@ -59,7 +71,8 @@ def test_target_settings(project, host_target)
     target.include_files = ["Tests/*.swift"]
 
     target.all_configurations.settings["INFOPLIST_FILE"] = "Supporting Files/Info.plist"
-    target.all_configurations.settings["LD_RUNPATH_SEARCH_PATHS"] = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks"
+
+    platform_specific_settings target
 
   end
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0720"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E41A3550389EC4ED40180B45"
+               BlueprintIdentifier = "57576616F9C95A5E66BBFE0F"
                BuildableName = "Moya_Extension.framework"
                BlueprintName = "Moya-Extension-Mac"
                ReferencedContainer = "container:Moya-Extension.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "372EAF83E00E3BBD5B965A8B"
+               BlueprintIdentifier = "D56C60CF8A1FD82B7AC83DC3"
                BuildableName = "Moya-Extension-MacTests.xctest"
                BlueprintName = "Moya-Extension-MacTests"
                ReferencedContainer = "container:Moya-Extension.xcodeproj">
@@ -55,7 +55,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E41A3550389EC4ED40180B45"
+            BlueprintIdentifier = "57576616F9C95A5E66BBFE0F"
             BuildableName = "Moya_Extension.framework"
             BlueprintName = "Moya-Extension-Mac"
             ReferencedContainer = "container:Moya-Extension.xcodeproj">
