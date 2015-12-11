@@ -63,11 +63,12 @@ end
 
 desc 'Build, then run tests.'
 task :test do
-  supported_test_targets.map { |platform| xcodebuild platform, 'debug', 'clean build test', '--test' }
+  supported_test_targets.map { |platform| xcodebuild platform, 'Debug', 'clean build test', '--test' }
+  sh 'killall Simulator'
 end
 
 desc 'Build the frameworks'
 task :build do
-  supported_build_targets.map { |platform| xcodebuild platform, 'debug', 'clean build', '' }
-  supported_build_targets.map { |platform| xcodebuild platform, 'release', 'clean build', '' }
+  supported_build_targets.map { |platform| xcodebuild platform, 'Debug', 'clean build', '' }
+  supported_build_targets.map { |platform| xcodebuild platform, 'Release', 'clean build', '' }
 end

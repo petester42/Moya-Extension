@@ -23,19 +23,6 @@ def target_identifier(platform)
   end
 end
 
-def platform_specific_settings(target)
-
-  case target.platform
-  when :osx
-    target.all_configurations.settings["COMBINE_HIDPI_IMAGES"] = "YES"
-    target.all_configurations.settings["LD_RUNPATH_SEARCH_PATHS"] = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks"
-  when :ios, :watchos, :tvos
-    target.all_configurations.settings["LD_RUNPATH_SEARCH_PATHS"] = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks"
-    target.all_configurations.settings["ENABLE_BITCODE"] = "YES"
-  end
-
-end
-
 def target_settings(target, platform, version)
 
   target_suffix = target_identifier platform
@@ -53,51 +40,41 @@ def target_settings(target, platform, version)
   target.all_configurations.settings["RAW_PRODUCT_NAME"] = name
   target.all_configurations.settings["PRODUCT_NAME"] = "${RAW_PRODUCT_NAME:identifier}"
 
-  platform_specific_settings target
-
 end
 
-def test_target_settings(project, host_target)
-
-  unit_test_target = project.target do |target|
-
-    target.name = "#{host_target.name}Tests"
-
-    target.language = host_target.language
-    target.type = :unit_test_bundle
-    target.platform = host_target.platform
-    target.deployment_target = host_target.deployment_target
+def test_target_settings(target)
 
     target.include_files = ["Tests/*.swift"]
-
     target.all_configurations.settings["INFOPLIST_FILE"] = "Supporting Files/Info.plist"
-
-    platform_specific_settings target
-
-  end
-
+    
 end
 
 Project.new name do |project|
 
   project.target do |target|
     target_settings target, :ios, 8.0
-    test_target_settings project, target
+    project.unit_tests_for target do |unit_test_target|
+      test_target_settings unit_test_target
+    end
   end
 
   project.target do |target|
     target_settings target, :osx, 10.9
-    test_target_settings project, target
+    project.unit_tests_for target do |unit_test_target|
+      test_target_settings unit_test_target
+    end
   end
 
   project.target do |target|
     target_settings target, :tvos, 9.0
-    test_target_settings project, target
+    project.unit_tests_for target do |unit_test_target|
+      test_target_settings unit_test_target
+    end
   end
 
   project.target do |target|
     target_settings target, :watchos, 2.0
-    # test_target_settings project, target //can't test watchos
+    # can't test watchOS
   end
 
 end

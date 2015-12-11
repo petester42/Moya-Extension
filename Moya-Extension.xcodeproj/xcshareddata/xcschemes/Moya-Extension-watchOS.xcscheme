@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0183A3FDF0F503937AA1FB3E"
+               BlueprintIdentifier = "02E0ECC54F2112220CF137EF"
                BuildableName = "Moya_Extension.framework"
                BlueprintName = "Moya-Extension-watchOS"
                ReferencedContainer = "container:Moya-Extension.xcodeproj">
@@ -28,16 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4F2A259C9FF0F9C259CB49F3"
-               BuildableName = "Moya-Extension-watchOSTests.xctest"
-               BlueprintName = "Moya-Extension-watchOSTests"
-               ReferencedContainer = "container:Moya-Extension.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <AdditionalOptions>
       </AdditionalOptions>
@@ -55,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0183A3FDF0F503937AA1FB3E"
+            BlueprintIdentifier = "02E0ECC54F2112220CF137EF"
             BuildableName = "Moya_Extension.framework"
             BlueprintName = "Moya-Extension-watchOS"
             ReferencedContainer = "container:Moya-Extension.xcodeproj">
